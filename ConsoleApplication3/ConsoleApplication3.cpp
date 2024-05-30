@@ -51,6 +51,14 @@ public:
 			FRONT = -1;
 			REAR = -1;
 		}
+		else {
+			//jika elemen yang dihapus berada diposisi terakhir array,kembali ke awalarray
+			if (FRONT == max - 1)
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
+		}
+	}
 		
 
 	void display() {
