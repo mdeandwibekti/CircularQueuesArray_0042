@@ -38,6 +38,24 @@ public:
 		queue_array[REAR] = num;
 	}
 
+	void remove() {
+		// cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "queue underflow\n";
+			return;
+		}
+		cout << "\nthe elment deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		//cek jika antrian hanya memiliki satu elemen 
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		
+
+	void display() {
+		int FRONT_position = FRONT;
+	}
 
 
 };
